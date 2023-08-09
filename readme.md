@@ -1,5 +1,5 @@
-This is my first Web App.
+Hey this is a great application called Vuetube.
 
-Attempting to build a Weather App for Golf.
+I am happy that i built a tool called Vuetube.
 
-Hey this is new
+Vuetube is great.
