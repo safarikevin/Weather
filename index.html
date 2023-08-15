@@ -1,53 +1,30 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8">
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #f1f1f1;
-      }
-      
-      header {
-        background-color: #008000;
-        color: #ffffff;
-        padding: 10px;
-        text-align: center;
-      }
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.4/dist/tailwind.min.css" rel="stylesheet">
 
-      main {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin: 20px;
-      }
-
-      video {
-        width: 400px;
-        height: 300px;
-        margin: 10px;
-        border: 1px solid #cccccc;
-        box-shadow: 2px 2px 5px #cccccc;
-      }
-
-      footer {
-        background-color: #333333;
-        color: #ffffff;
-        padding: 10px;
-        text-align: center;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <h1>Davey Daycare</h1>
+</head>
+<body class="bg-gray-200 font-sans">
+    <header class="bg-green-600 p-6 text-center">
+        <h1 class="text-4xl text-white">Davey Daycare</h1>
+        <p class="text-lg text-white mt-2">Experience our new, effective tool for easy video management</p>
     </header>
-    <main>
-      <video src="video1.mp4" controls></video>
-      <video src="video2.mp4" controls></video>
+
+    <main class="container mx-auto grid grid-cols-3 gap-4 p-6">
+        <video src="video1.mp4" controls class="w-full h-auto"></video>
+        <video src="video2.mp4" controls class="w-full h-auto"></video>
+        <!-- Additional Videos Here -->
     </main>
-    <footer>
-      <p>&copy; KernelTube 2021</p>
+
+    <div class="flex justify-center py-4">
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            Upload Video
+        </button>
+    </div>
+
+    <footer class="bg-gray-800 text-center p-4 h-12 text-white">
+        <p>&copy; KernelTube 2021</p>
     </footer>
-  </body>
+</body>
 </html>
